@@ -1,0 +1,56 @@
+.lupa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.input-container {
+    position: relative;
+    width: 300px; 
+}
+
+#searchbar {
+    width: calc(100% - 30px); 
+    padding-left: 30px; 
+    border-radius: 30px;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    color: white;
+    background-color: rgb(23, 24, 27);
+}
+
+#imagem {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+.evento {
+    text-align: justify;
+}
+
+.info
+{
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+.info2 {
+    margin: 10px;
+}
+
+section{
+    display: flex;
+    gap: 20px;
+}

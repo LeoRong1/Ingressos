@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Deviacom Ingressos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Deviacom Ingressos </h1> 
+        <div class="input-container">
+            <img class="lupa" src="./imagens/lupa.png" alt="lupa"> 
+            <input id="searchbar" type="text" name="searchbar" placeholder="Search" onkeyup="search()">
+        </div>
+        <div></div>
+        <div></div>
+    </header>
+    <h2 class="evento">Eventos Disponiveis</h2>
+    <section>
+        <div class="info">
+            <img id="imagem" src="./imagens/Aquaman2.jpg" alt="">
+            <div class="info2">
+                <h3 class="nome">Aquaman 2: O Reino Perdido</h3>
+                <h2 class="data"></h2>
+                <h2 class="preco">R$20.00</h2> 
+                <input type="button" value="Detalhes" onclick="detalhe('Aquaman 2: O Reino Perdido')">
+            </div>
+        </div>
+        <div class="info">
+            <img id="imagem" src="./imagens/bruxadosmortos.jpeg" alt="" >
+            <div class="info2">
+                <h3 class="nome">A Bruxa dos Mortos: Baghead</h3>
+                <h2 class="data"></h2>
+                <h2 class="preco">R$18.00</h2> 
+                <input type="button" value="Detalhes" onclick="detalhe('A Bruxa dos Mortos: Baghead')">
+            </div>
+        </div>
+        <div class="info">
+            <img id="imagem" src="./imagens/madame.jpg" alt="" >
+            <div class="info2">
+                <h3 class="nome">Madame Teia</h3>
+                <h2 class="data"></h2>
+                <h2 class="preco">R$35.00</h2> 
+                <input type="button" value="Detalhes" onclick="detalhe('Madame Teia')">
+            </div>
+        </div>
+        
+        
+    </section>
+</body>
+<script src="./scripts/scriptEventos.js"></script>
+</html>

@@ -26,12 +26,13 @@ app.post('/login', (requisicao, resposta)=>{
 
     if(usuario && senha && usuario === 'Leo' && senha === '123'){
         requisicao.session.usuarioLogado = true;
-        resposta.redirect('/cadastroCliente.html');
+        resposta.redirect('/eventos.html');
     }
     else{
         resposta.redirect('/login.html')
     }
 })
+
 
 //O express oferece funcionalidades para permitir que conteúdo estático seja fornecido
 app.use(express.static(path.join(process.cwd(), 'publico')));
