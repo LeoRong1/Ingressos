@@ -34,6 +34,8 @@ app.post('/login', (requisicao, resposta)=>{
 })
 
 
+
+
 //O express oferece funcionalidades para permitir que conteúdo estático seja fornecido
 app.use(express.static(path.join(process.cwd(), 'publico')));
 

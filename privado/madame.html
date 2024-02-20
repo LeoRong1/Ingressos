@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>A Bruxa dos Mortos: Baghead</title>
+    <link rel="stylesheet" href="./style/styleMadame.css">
 </head>
-<body>
-    ma
+<body onload="carregarBruxa()">
+    <header>
+        <h1>Deviacom Ingressos </h1> 
+        <div class="input-container">
+            <img class="lupa" src="./imagens/lupa.png" alt="lupa"> 
+            <input id="searchbar" type="text" name="searchbar" placeholder="Search" onkeyup="search()">
+        </div>
+        <div></div>
+        <div></div>
+    </header>
+    <h2 class="nome"></h2>
+    <section>
+        <div class="info">
+            <img class="imagem" src="./imagens/madame.jpg" alt="">
+            <div>
+                <h4>Sinopse</h4>
+                <div class="sinopse"></div>
+                <h4>Genero</h4>
+                <div class="genero"></div>
+                <h4>Duracao</h4>
+                <div class="duracao"></div>
+                <h4>Data</h4>
+                <div class="data"></div>
+                <h4>Hora</h4>
+                <div class="hora"></div>
+                <h4>Preco</h4>
+                <div class="preco"></div>
+                <h4>Local</h4>
+                <div class="local"></div>
+            </div>   
+        </div> 
+        
+    </section>
+    <script src="./scripts/scriptMadame.js"></script>
 </body>
 </html>
