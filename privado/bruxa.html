@@ -10,8 +10,8 @@
     <header>
         <h1>Deviacom Ingressos </h1> 
         <div class="input-container">
+            <input class="search" type="text" placeholder="Search">
             <img class="lupa" src="./imagens/lupa.png" alt="lupa"> 
-            <input id="searchbar" type="text" name="searchbar" placeholder="Search" onkeyup="search()">
         </div>
         <div></div>
         <div></div>
@@ -35,6 +35,9 @@
                 <div class="preco"></div>
                 <h4>Local</h4>
                 <div class="local"></div>
+                <p></p>
+                <input value="0" id="qtd" type="number" placeholder="Quantidade de Ingressos" min="0" max="100">
+                <h4 class="valTot">Valor Total: R$0</h4>
             </div>   
         </div> 
         

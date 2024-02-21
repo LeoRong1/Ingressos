@@ -11,6 +11,12 @@ let aquaman = {
     genero: "Ação, Fantasia"
 };
 
+let qtd = document.querySelector('#qtd');
+let valTot = document.querySelector('.valTot');
+qtd.addEventListener("click", ()=>{
+    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*aquaman.preco)}`;
+});
+
 function carregarBruxa() {
     let nome = document.querySelector('.nome');
     let sinopse = document.querySelector('.sinopse');

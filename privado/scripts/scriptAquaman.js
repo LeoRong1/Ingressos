@@ -11,6 +11,12 @@ let aquaman = {
     genero: "Aventura" 
 };
 
+let qtd = document.querySelector('#qtd');
+let valTot = document.querySelector('.valTot');
+qtd.addEventListener("click", ()=>{
+    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*aquaman.preco)}`;
+});
+
 function carregarAquaman() {
     let nome = document.querySelector('.nome');
     let sinopse = document.querySelector('.sinopse');
@@ -31,12 +37,6 @@ function carregarAquaman() {
     local.innerHTML += aquaman.local;
 
 }
-
-let qtd = document.querySelector('#qtd');
-let valTot = document.querySelector('.valTot');
-qtd.addEventListener("click", ()=>{
-    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*aquaman.preco)}`;
-});
 
 function getFormatDate(value){
     if(value > 9) 
