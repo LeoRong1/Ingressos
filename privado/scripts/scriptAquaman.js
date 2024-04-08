@@ -33,7 +33,7 @@ function carregarAquaman() {
     duracao.innerHTML += aquaman.duracao;
     data.innerHTML += `${getFormatDate(aquaman.data.getDate()+1)}/${getFormatDate(aquaman.data.getMonth()+1)}/${aquaman.data.getFullYear()}`;
     hora.innerHTML += aquaman.horario;
-    preco.innerHTML += aquaman.preco;
+    preco.innerHTML += `R$ ${aquaman.preco}.00`;
     local.innerHTML += aquaman.local;
 
 }

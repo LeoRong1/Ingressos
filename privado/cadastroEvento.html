@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <title>Cadastro de Eventos</title>
+    </head>
+    <body>
+        <br/>
+        <div class="container w-60 border p-5">
+            <h1>Cadastro de Eventos</h1>
+            <form id="formEvento" method="POST" action="#" class="row g-3 needs-validation" novalidate>
+                <div class="row mt-2">
+                    <div class="col-md-2">
+                        <label for="id" class="form-label">ID:</label>
+                        <input type="text" class="form-control" id="id" name="id" value="0" required disabled>
+                        <div class="invalid-feedback">
+                            Informe o ID!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" value="" required>
+                    <div class="invalid-feedback">
+                    Informe o nome!
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <label for="genero" class="form-label">Genero:</label>
+                    <input type="text" class="form-control" id="genero" name="genero" value="" required>
+                    <div class="invalid-feedback">
+                    Informe o genero!
+                    </div>
+                </div>
+                <div class="col-md-15">
+                    <label for="sinopse" class="form-label">Sinopse:</label>
+                    <input type="text" class="form-control" id="sinopse" name="sinopse" value="" required>
+                    <div class="invalid-feedback">
+                    Informe a sinopse!
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="duracao" class="form-label">Duração:</label>
+                    <input type="text" class="form-control" id="duracao" name="duracao" value="" required>
+                    <div class="invalid-feedback">
+                    Informe o tempo de duracao!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="data" class="form-label">Data:</label>
+                    <input type="date" class="form-control" id="data" name="data" value="" required>
+                    <div class="invalid-feedback">
+                    Informa a data!
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="hora" class="form-label">Hora:</label>
+                    <input type="text" class="form-control" id="hora" name="hora" value="" required>
+                    <div class="invalid-feedback">
+                    Informe a hora do filme!
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="Preco" class="form-label">Preço:</label>
+                    <input type="text" class="form-control" id="preco" name="preco" value="" required>
+                    <div class="invalid-feedback">
+                    Informe o preco!
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <label for="endereco" class="form-label">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" value="" required>
+                    <div class="invalid-feedback">
+                    Informe o endereco do local!
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" id='cadastrar' type="submit">Cadastrar</button>
+                    <button class="btn btn-warning" id='atualizar' type="button" >Atualizar</button>
+                    <button class="btn btn-danger" id='excluir' type="button" >Excluir</button>
+                    <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+                </div>
+            </form>
+        </div>
+        <br/>
+        <div id="mensagem">
+
+        </div>
+        </br>
+        <div class='container' id="espacoTabela">
+            
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="./scripts/scriptEvento.js"></script>
+    
+</html>

@@ -1,5 +1,5 @@
 let data = new Date();
-let aquaman = {
+let bruxa = {
     nome: "A Bruxa dos Mortos: Baghead",
     data: data,
     preco: 18.00,
@@ -14,7 +14,7 @@ let aquaman = {
 let qtd = document.querySelector('#qtd');
 let valTot = document.querySelector('.valTot');
 qtd.addEventListener("click", ()=>{
-    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*aquaman.preco)}`;
+    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*bruxa.preco)}`;
 });
 
 function carregarBruxa() {
@@ -27,14 +27,14 @@ function carregarBruxa() {
     let preco = document.querySelector('.preco');
     let local = document.querySelector('.local');
     
-    nome.innerHTML += aquaman.nome;
-    sinopse.innerHTML += aquaman.sinopse;
-    genero.innerHTML += aquaman.genero;
-    duracao.innerHTML += aquaman.duracao;
-    data.innerHTML += `${getFormatDate(aquaman.data.getDate()+1)}/${getFormatDate(aquaman.data.getMonth()+1)}/${aquaman.data.getFullYear()}`;
-    hora.innerHTML += aquaman.horario;
-    preco.innerHTML += aquaman.preco;
-    local.innerHTML += aquaman.local;
+    nome.innerHTML += bruxa.nome;
+    sinopse.innerHTML += bruxa.sinopse;
+    genero.innerHTML += bruxa.genero;
+    duracao.innerHTML += bruxa.duracao;
+    data.innerHTML += `${getFormatDate(bruxa.data.getDate()+1)}/${getFormatDate(bruxa.data.getMonth()+1)}/${bruxa.data.getFullYear()}`;
+    hora.innerHTML += bruxa.horario;
+    preco.innerHTML += `R$ ${bruxa.preco}.00`;
+    local.innerHTML += bruxa.local;
 
 }
 

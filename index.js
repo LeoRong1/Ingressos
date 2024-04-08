@@ -5,7 +5,7 @@ import session from "express-session";
 import autenticar from "./seguranca/autenticar.js";
 
 const host='0.0.0.0'; //O ip 0.0.0.0 representa todas as interfaces (placas de rede) do computador onde essa aplicação for executada
-const porta = 3000;  //Porta identifica um programa em execução no host hospedeiro
+const porta = 4000;  //Porta identifica um programa em execução no host hospedeiro
 const app = express();
 
 app.use(express.urlencoded({extended: true}));
@@ -26,7 +26,7 @@ app.post('/login', (requisicao, resposta)=>{
 
     if(usuario && senha && usuario === 'Leo' && senha === '123'){
         requisicao.session.usuarioLogado = true;
-        resposta.redirect('/eventos.html');
+        resposta.redirect('/cadastroEvento.html');
     }
     else{
         resposta.redirect('/login.html')

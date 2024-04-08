@@ -1,5 +1,5 @@
 let data = new Date();
-let aquaman = {
+let madame = {
     nome: "Madame Teia",
     data: data,
     preco: 35.00,
@@ -14,7 +14,7 @@ let aquaman = {
 let qtd = document.querySelector('#qtd');
 let valTot = document.querySelector('.valTot');
 qtd.addEventListener("click", ()=>{
-    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*aquaman.preco)}`;
+    valTot.innerHTML = `Valor Total: R$${Number(qtd.value*madame.preco)}`;
 });
 
 function carregarBruxa() {
@@ -27,14 +27,14 @@ function carregarBruxa() {
     let preco = document.querySelector('.preco');
     let local = document.querySelector('.local');
     
-    nome.innerHTML += aquaman.nome;
-    sinopse.innerHTML += aquaman.sinopse;
-    genero.innerHTML += aquaman.genero;
-    duracao.innerHTML += aquaman.duracao;
-    data.innerHTML += `${getFormatDate(aquaman.data.getDate()+1)}/${getFormatDate(aquaman.data.getMonth()+1)}/${aquaman.data.getFullYear()}`;
-    hora.innerHTML += aquaman.horario;
-    preco.innerHTML += aquaman.preco;
-    local.innerHTML += aquaman.local;
+    nome.innerHTML += madame.nome;
+    sinopse.innerHTML += madame.sinopse;
+    genero.innerHTML += madame.genero;
+    duracao.innerHTML += madame.duracao;
+    data.innerHTML += `${getFormatDate(madame.data.getDate()+1)}/${getFormatDate(madame.data.getMonth()+1)}/${madame.data.getFullYear()}`;
+    hora.innerHTML += madame.horario;
+    preco.innerHTML += `R$ ${madame.preco}.00`;
+    local.innerHTML += madame.local;
 
 }
 
