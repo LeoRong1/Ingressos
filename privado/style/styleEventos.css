@@ -38,8 +38,8 @@ body{
 }
 
 #imagem {
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 500px;
     border-radius: 20px;
 }
 
@@ -58,6 +58,11 @@ body{
 }
 
 section{
+    display: flex;
+    gap: 20px;
+}
+
+#bloco {
     display: flex;
     gap: 20px;
 }

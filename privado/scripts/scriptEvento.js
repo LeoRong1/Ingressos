@@ -18,6 +18,7 @@ function obterEventoDoFormulario() {
     const hora = document.getElementById('hora').value;
     const preco = document.getElementById('preco').value;
     const local = document.getElementById('endereco').value;
+    const imagem = document.getElementById('imagem').value;
 
 
     if(id && nome && sinopse && genero && duracao && data && hora && preco && local)
@@ -31,7 +32,8 @@ function obterEventoDoFormulario() {
             data : data,
             hora : hora,
             preco : preco,
-            local : local
+            local : local,
+            imagem : imagem
         }
     }
     else {
@@ -49,6 +51,7 @@ function limparFormulario(){
     document.getElementById('hora').value = "";
     document.getElementById('preco').value = "";
     document.getElementById('endereco').value = "";
+    document.getElementById('imagem').value = "";
 }
 
 async function gravarEvento(evento){
@@ -115,9 +118,9 @@ function criaTabelaEventos(listaEventos){
                                 " <td> " + evento.local + " </td> " +
                                 `<td> \
                                     <button type="button" class="btn btn-warning" onClick="prepararTela('${evento.codigo}','${evento.nome}','${evento.sinopse}',
-                                    '${evento.genero}','${evento.duracao}','${evento.data}','${evento.hora}','${evento.preco}','${evento.local}','atualizacao')">Editar</button> \
+                                    '${evento.genero}','${evento.duracao}','${evento.data}','${evento.hora}','${evento.preco}','${evento.local}','${evento.imagem}','atualizacao')">Editar</button> \
                                     <button type="button" class="btn btn-danger" onClick="prepararTela('${evento.codigo}','${evento.nome}','${evento.sinopse}',
-                                    '${evento.genero}','${evento.duracao}','${evento.data}','${evento.hora}','${evento.preco}','${evento.local}','exclusao')">Excluir</button> \
+                                    '${evento.genero}','${evento.duracao}','${evento.data}','${evento.hora}','${evento.preco}','${evento.local}','${evento.imagem}','exclusao')">Excluir</button> \
                                 </td>`;     
             corpo.appendChild(linha);
         }
@@ -143,7 +146,7 @@ function exibirTabelaEventos() {
     });
 }
 
-function prepararTela(codigo="", nome="", sinopse="", genero="", duracao="", data="", hora="", preco="", local="", acao="") {
+function prepararTela(codigo="", nome="", sinopse="", genero="", duracao="", data="", hora="", preco="", local="",imagem="", acao="") {
     let botaoCadastrar = document.getElementById('cadastrar');
     let botaoAtualizar = document.getElementById('atualizar');
     let botaoExcluir = document.getElementById('excluir');
@@ -157,6 +160,7 @@ function prepararTela(codigo="", nome="", sinopse="", genero="", duracao="", dat
     document.getElementById('hora').value = hora;
     document.getElementById('preco').value = preco;
     document.getElementById('endereco').value = local;
+    document.getElementById('imagem').value = imagem;
 
     if(acao === 'exclusao'){
         botaoCadastrar.disabled = true;

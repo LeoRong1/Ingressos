@@ -9,7 +9,7 @@
     <body>
         <br/>
         <div class="container w-60 border p-5">
-            <h1>Cadastro de Eventos</h1>
+            <h1>Cadastro de Eventos</h1> 
             <form id="formEvento" method="POST" action="#" class="row g-3 needs-validation" novalidate>
                 <div class="row mt-2">
                     <div class="col-md-2">
@@ -77,11 +77,19 @@
                     Informe o endereco do local!
                     </div>
                 </div>
+                <div class="col-md-13">
+                    <label for="imagem" class="form-label">Imagem:</label>
+                    <input type="text" class="form-control" id="imagem" name="imagem" value="" required>
+                    <div class="invalid-feedback">
+                    Informe o imagem do evento!
+                    </div>
+                </div>
                 <div class="col-12">
                     <button class="btn btn-primary" id='cadastrar' type="submit">Cadastrar</button>
                     <button class="btn btn-warning" id='atualizar' type="button" >Atualizar</button>
                     <button class="btn btn-danger" id='excluir' type="button" >Excluir</button>
                     <button class="btn btn-secondary" type="button" onclick="history.back()">Voltar</button>
+                    <a href="./eventos.html">Tabela de Eventos</a>
                 </div>
             </form>
         </div>
